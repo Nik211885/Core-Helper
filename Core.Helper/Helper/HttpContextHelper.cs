@@ -6,6 +6,15 @@ namespace Core.Helper.Helper;
 
 public static class HttpContextHelper
 {
+    /// <summary>
+    ///     Get value from form data have key is key
+    /// </summary>
+    /// <param name="context"></param>
+    /// <param name="key"></param>
+    /// <typeparam name="TValue"></typeparam>
+    /// <returns>
+    ///     Return specific object you want to deserialize
+    /// </returns>
     public static List<TValue> GetValueFromData<TValue>(this HttpContext context, string key)
     {
         var formValues = new List<TValue>();
@@ -19,7 +28,13 @@ public static class HttpContextHelper
         };
         return formValues;
     }
-
+    /// <summary>
+    ///     Get key and value in query string 
+    /// </summary>
+    /// <param name="context"></param>
+    /// <returns>
+    ///     Return list fields includes key and value in query string
+    /// </returns>
     public static Search GetSearchInQueryString(this HttpContext context)
     {
         var search = new Search()
