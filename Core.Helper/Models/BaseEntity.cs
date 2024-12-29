@@ -1,6 +1,6 @@
 namespace Core.Helper.Models;
 
-public abstract class BaseEntity<TKey>(TKey id)
+public abstract class BaseEntity<TKey>
 {
-    public TKey Id { get; } = id;
+    public TKey Id { get; set; }
 }

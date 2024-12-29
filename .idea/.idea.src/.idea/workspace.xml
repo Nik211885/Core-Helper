@@ -16,12 +16,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e17abe-97f5-4bd2-ae58-db2d6a142d36" name="Changes" comment="base entity and regular expressions">
-      <change afterPath="$PROJECT_DIR$/Core.Helper/Helper/DateTimeHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core.Helper/Helper/SimpleMappingHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core.Helper/Helper/StringCoreHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core.Helper/Interface/IRepositoryBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core.Helper/Helper/HttpContextHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Helper/HttpContextHelper.cs" afterDir="false" />
+    <list default="true" id="f8e17abe-97f5-4bd2-ae58-db2d6a142d36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Helper/SecurityHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Interface/ICaching.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Interface/IFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Models/IdentityInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Models/JwtResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core.Helper/Models/MailSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp/ConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp/ConsoleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Core.Helper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Core.Helper.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Helper/DateTimeHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Helper/DateTimeHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Helper/SimpleMappingHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Helper/SimpleMappingHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Helper/StringHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Helper/StringHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Infrastructure/EmailSend.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Infrastructure/JwtTokenManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Interface/IEmailSender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Interface/IEmailSender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Interface/IJwtTokenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Interface/IJwtTokenManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Interface/IRepositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Interface/IRepositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Models/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Models/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Models/CoreEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Models/CoreEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core.Helper/Models/Search.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core.Helper/Models/Search.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +60,17 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/14/fe156d07/0200000Bpdb2.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/1b/edeb4ccf/0200000Dpdb4.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/1f/19b82b36/02000006pdb7.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/72/a0e1904b/02000008pdb9.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/80/cc2f9282/02000007pdb8.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/39c2c140636f48219b55fab72fc3e00b5600/8c/eb2946c5/0200000Epdb5.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/ab4510c4983b4b5b964ce637ec5183561800/38/901f1554/02000003pdb1.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/ce44331b8bfa46c6964d68bdb312c5cf1200/89/15be8a51/02000003pdb1.il" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/243a037ca7a04510a506adfdd94befbac90930/a3/11a53e50/PropertyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18683722e1c2b2ebec2d4d34a28350723bb9ebee96f317a7fe83d44d6d3f9a/GeneratedRegexAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5093a86c8aee49947ef9cae0fd5d1e6bb5209d3e20dc1ac07d1f4f4b49a712/ClaimsIdentity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5553559cdb4b5664893497ec3d7831e41e3f7cff9dd2ef3258115769f70aa/DateTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5b7939ac84ece28eb02d599c3a58efc3289150733e8f3375fb576f45d12e7b0/DateTimeOffset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core.Helper.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,22 +84,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.EndPoint: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.EndPoint: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.EndPoints: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.EndPoint: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.EndPoint: http.executor": "Run",
+    ".NET Launch Settings Profile.EndPoints: http.executor": "Run",
+    ".NET Project.ConsoleApp.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.60324824",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.EndPoints: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.ConsoleApp">
     <configuration name="ConsoleApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -245,6 +274,14 @@
       <workItem from="1731405926136" duration="3303000" />
       <workItem from="1731421540935" duration="2504000" />
       <workItem from="1731424081646" duration="419000" />
+      <workItem from="1731425075698" duration="2238000" />
+      <workItem from="1731477009148" duration="499000" />
+      <workItem from="1731491106396" duration="5515000" />
+      <workItem from="1731496897504" duration="22000" />
+      <workItem from="1731574528269" duration="2886000" />
+      <workItem from="1731651109372" duration="679000" />
+      <workItem from="1731667483732" duration="1588000" />
+      <workItem from="1735448122201" duration="4827000" />
     </task>
     <task id="LOCAL-00001" summary="httpcontext helper and pagination for ef">
       <option name="closed" value="true" />
@@ -262,7 +299,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731409100646</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add interface repository and email services">
+      <option name="closed" value="true" />
+      <created>1731426387240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731426387240</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pull security project to core">
+      <option name="closed" value="true" />
+      <created>1731427317068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731427317068</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +327,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="httpcontext helper and pagination for ef" />
     <MESSAGE value="base entity and regular expressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="base entity and regular expressions" />
+    <MESSAGE value="add interface repository and email services" />
+    <MESSAGE value="pull security project to core" />
+    <option name="LAST_COMMIT_MESSAGE" value="pull security project to core" />
   </component>
 </project>

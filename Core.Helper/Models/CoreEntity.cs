@@ -7,17 +7,10 @@ namespace Core.Helper.Models;
 /// <param name="id"></param>
 /// <param name="userName"></param>
 /// <typeparam name="TKey"></typeparam>
-public abstract class CoreEntity<TKey>
-    (TKey id, string? userName) : BaseEntity<TKey>(id)
+public abstract class CoreEntity<TKey> : BaseEntity<TKey>
 {
-    public string CreatedBy { get; } = userName ?? ConstVariable.DEFAULT_USER_NAME;
-    public DateTimeOffset CreatedAt { get; } = DateTimeOffset.UtcNow;
-    public string UpdatedBy { get; private set; } = userName ?? ConstVariable.DEFAULT_USER_NAME; 
-    public DateTimeOffset UpdatedAt{ get; private set; } = DateTimeOffset.UtcNow;
-
-    public void UpdateCoreEntity(string? updatedBy)
-    {
-        UpdatedBy = updatedBy ?? ConstVariable.DEFAULT_USER_NAME;
-        UpdatedAt = DateTimeOffset.UtcNow;
-    }
+    public string CreatedBy { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
+    public string UpdatedBy { get; set; }
+    public DateTimeOffset UpdatedAt{ get;  set; } 
 }

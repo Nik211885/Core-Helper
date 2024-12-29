@@ -6,12 +6,12 @@ namespace Core.Helper.Helper;
 
 public static class StringHelper
 {
-    public static string GetStringFromDateNow()
-        => DateTimeOffset.UtcNow.ToString("yyyyMMddHHmmss");
+    public static string GetStringFromDateNow(string format = "yyyyMMddHHmmss")
+        => DateTimeOffset.UtcNow.ToString(format);
     public static Guid GetGuidKeyId() => Guid.NewGuid();
     public static string MakeKeyId(params string[] code) 
         => string.Concat(string.Join("_",code),"_",GetStringFromDateNow());
-    public static string GeneratorStringBase64(int bytes)
+    public static string GeneratorRandomStringBase64(int bytes)
     {
         // one character in base 64 equals 6 bits , one byte = 8 bits
         var rands = new byte[bytes];
@@ -21,7 +21,7 @@ public static class StringHelper
         }
         return Convert.ToBase64String(rands);
     }
-    public static char GeneratorCharacter(CharacterType type)
+    public static char GeneratorRandomCharacter(CharacterType type)
     {
         var rand = new Random();
         // have 4 container have special character in asscii :)
@@ -56,7 +56,7 @@ public static class StringHelper
         {
             var randType = random.Next(0, typeLength);
             flags.Add(randType);
-            password.Append(StringHelper.GeneratorCharacter(charTypes[randType]));
+            password.Append(StringHelper.GeneratorRandomCharacter(charTypes[randType]));
         }
 
         if (flags.Count != typeLength)
@@ -65,7 +65,7 @@ public static class StringHelper
             {
                 if (!flags.Contains(i))
                 {
-                    password.Append(StringHelper.GeneratorCharacter(charTypes[i]));
+                    password.Append(StringHelper.GeneratorRandomCharacter(charTypes[i]));
                 }
             }
         }
